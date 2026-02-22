@@ -87,7 +87,7 @@ const Skills = () => {
                                 </div>
 
                                 {/* Skills List */}
-                                <div className="flex-1 bg-white/[0.02] border border-white/10 p-8 rounded-b-xl group-hover/card:border-cyan-accent/20 transition-colors backdrop-blur-sm relative overflow-hidden">
+                                <div className="flex-1 bg-white/[0.02] border border-white/10 p-6 sm:p-8 rounded-b-xl group-hover/card:border-cyan-accent/20 transition-colors backdrop-blur-sm relative overflow-hidden">
                                     <div className="grid grid-cols-1 gap-4">
                                         {category.skills.map((skill, skillIndex) => (
                                             <div

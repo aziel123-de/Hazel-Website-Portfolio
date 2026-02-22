@@ -20,7 +20,7 @@ const About = () => {
                             <img
                                 src="/hel.png"
                                 alt="Hazel Ann Sadangsal"
-                                className="relative rounded-xl shadow-2xl w-full h-[500px] object-top object-cover"
+                                className="relative rounded-xl shadow-2xl w-full h-[300px] sm:h-[400px] md:h-[500px] object-top object-cover"
                             />
                         </div>
                     </ScrollReveal>
@@ -34,8 +34,8 @@ const About = () => {
                                 <div className="absolute top-0 right-0 p-2 text-[10px] text-gray-600 font-mono uppercase tracking-tighter opacity-0 group-hover/code:opacity-100 transition-opacity">
                                     bio.ts
                                 </div>
-                                <div className="flex gap-4">
-                                    <div className="hidden sm:flex flex-col text-gray-700 text-xs select-none text-right pt-1 border-r border-white/5 pr-4">
+                                <div className="flex gap-2 sm:gap-4">
+                                    <div className="hidden xs:flex flex-col text-gray-700 text-[10px] sm:text-xs select-none text-right pt-1 border-r border-white/5 pr-2 sm:pr-4">
                                         <span>01</span>
                                         <span>02</span>
                                         <span>03</span>
@@ -45,9 +45,9 @@ const About = () => {
                                         <span>07</span>
                                         <span>08</span>
                                     </div>
-                                    <div>
-                                        <span className="text-cyan-accent/40 text-sm block mb-1">/**</span>
-                                        <div className="text-gray-400 text-base leading-relaxed italic space-y-4">
+                                    <div className="flex-1">
+                                        <span className="text-cyan-accent/40 text-xs sm:text-sm block mb-1">/**</span>
+                                        <div className="text-gray-400 text-sm sm:text-base leading-relaxed italic space-y-4">
                                             <p>
                                                 <span className="text-cyan-accent/40 mr-2">*</span>
                                                 I'm an Information Technology student from STI College Global City skilled in
@@ -66,7 +66,7 @@ const About = () => {
                                                 me create solutions that are both useful and easy for people to use.
                                             </p>
                                         </div>
-                                        <span className="text-cyan-accent/40 text-sm block mt-1"> */</span>
+                                        <span className="text-cyan-accent/40 text-xs sm:text-sm block mt-1"> */</span>
                                     </div>
                                 </div>
 
@@ -93,7 +93,7 @@ const About = () => {
 
                             <a
                                 href="/resume.pdf"
-                                className="inline-flex items-center gap-3 bg-cyan-accent text-primary-dark px-8 py-4 rounded-sm font-bold hover:bg-white transition-all transform hover:-translate-y-1 shadow-[0_0_20px_rgba(34,211,238,0.3)]"
+                                className="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-cyan-accent text-primary-dark px-8 py-4 rounded-sm font-bold hover:bg-white transition-all transform hover:-translate-y-1 shadow-[0_0_20px_rgba(34,211,238,0.3)]"
                             >
                                 <Download size={20} /> Download CV
                             </a>

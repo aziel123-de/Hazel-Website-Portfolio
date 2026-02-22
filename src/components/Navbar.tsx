@@ -42,13 +42,13 @@ const Navbar = () => {
             <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16">
                 <div className="flex items-center justify-between h-20">
                     <div className="flex-shrink-0 group cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-                        <div className="flex items-center font-mono text-xl tracking-tight">
+                        <div className="flex items-center font-mono text-lg sm:text-xl tracking-tight">
                             <span className="text-cyan-accent font-bold">hazel</span>
                             <span className="text-gray-500">.</span>
                             <span className="text-purple-400">portfolio</span>
                             <span className="text-gray-400">(</span>
                             <span className="text-gray-400">)</span>
-                            <span className="w-2 h-4 bg-cyan-accent/50 ml-1 animate-pulse"></span>
+                            <span className="w-1.5 h-4 bg-cyan-accent/50 ml-1 animate-pulse"></span>
                         </div>
                     </div>
 

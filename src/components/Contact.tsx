@@ -86,15 +86,15 @@ const Contact = () => {
                                     { icon: MapPin, label: 'location', value: 'Taguig, Philippines', color: 'text-yellow-200' }
                                 ].map((item, idx) => (
                                     <div key={idx} className="flex items-center gap-6 group">
-                                        <div className="bg-white/5 p-4 rounded-xl border border-white/10 group-hover:border-cyan-accent/50 transition-colors">
-                                            <item.icon size={28} className="text-cyan-accent" />
+                                        <div className="bg-white/5 p-3 sm:p-4 rounded-xl border border-white/10 group-hover:border-cyan-accent/50 transition-colors">
+                                            <item.icon size={24} className="text-cyan-accent sm:w-7 sm:h-7" />
                                         </div>
                                         <div>
                                             <div className="flex items-center gap-2 mb-1">
-                                                <p className={`text-xs font-mono uppercase tracking-widest ${item.color}`}>{item.label}</p>
+                                                <p className={`text-[10px] sm:text-xs font-mono uppercase tracking-widest ${item.color}`}>{item.label}</p>
                                                 <span className="text-white">:</span>
                                             </div>
-                                            <p className="text-lg font-medium text-white">{item.value}</p>
+                                            <p className="text-base sm:text-lg font-medium text-white break-all sm:break-normal">{item.value}</p>
                                         </div>
                                     </div>
                                 ))}
@@ -135,15 +135,14 @@ const Contact = () => {
                                 </div>
                             </div>
 
-                            {/* Terminal Body / Form */}
-                            <div className="flex-1 bg-white/[0.02] border border-white/10 p-8 rounded-b-xl group-hover/form:border-cyan-accent/20 transition-colors backdrop-blur-sm space-y-8">
-                                <div className="space-y-6">
+                            <div className="flex-1 bg-white/[0.02] border border-white/10 p-5 sm:p-8 rounded-b-xl group-hover/form:border-cyan-accent/20 transition-colors backdrop-blur-sm space-y-6 sm:space-y-8">
+                                <div className="space-y-4 sm:space-y-6">
                                     {[
                                         { id: 'name', name: 'name', label: 'from', type: 'text', placeholder: '"Your Name"', highlightColor: 'text-cyan-accent' },
                                         { id: 'email', name: 'email', label: 'email', type: 'email', placeholder: '"your@email.com"', highlightColor: 'text-purple-400' }
                                     ].map((field) => (
-                                        <div key={field.id} className="relative group/field px-4 border-l-2 border-transparent hover:border-cyan-accent/30 transition-all">
-                                            <div className="flex items-center gap-3 mb-2 font-mono text-sm">
+                                        <div key={field.id} className="relative group/field px-3 sm:px-4 border-l-2 border-transparent hover:border-cyan-accent/30 transition-all">
+                                            <div className="flex items-center gap-3 mb-2 font-mono text-xs sm:text-sm">
                                                 <span className={field.highlightColor}>{field.label}</span>
                                                 <span className="text-white">:</span>
                                             </div>
@@ -152,14 +151,14 @@ const Contact = () => {
                                                 id={field.id}
                                                 name={field.name}
                                                 required
-                                                className="w-full bg-white/[0.03] border border-white/5 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyan-accent/50 transition-all font-mono text-sm placeholder:text-gray-600"
+                                                className="w-full bg-white/[0.03] border border-white/5 rounded-lg px-3 py-2 sm:px-4 sm:py-3 text-white focus:outline-none focus:border-cyan-accent/50 transition-all font-mono text-xs sm:text-sm placeholder:text-gray-600"
                                                 placeholder={field.placeholder}
                                             />
                                         </div>
                                     ))}
 
-                                    <div className="relative group/field px-4 border-l-2 border-transparent hover:border-cyan-accent/30 transition-all">
-                                        <div className="flex items-center gap-3 mb-2 font-mono text-sm">
+                                    <div className="relative group/field px-3 sm:px-4 border-l-2 border-transparent hover:border-cyan-accent/30 transition-all">
+                                        <div className="flex items-center gap-3 mb-2 font-mono text-xs sm:text-sm">
                                             <span className="text-yellow-200">content</span>
                                             <span className="text-white">:</span>
                                         </div>
@@ -168,7 +167,7 @@ const Contact = () => {
                                             name="message"
                                             required
                                             rows={4}
-                                            className="w-full bg-white/[0.03] border border-white/5 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyan-accent/50 transition-all font-mono text-sm placeholder:text-gray-600"
+                                            className="w-full bg-white/[0.03] border border-white/5 rounded-lg px-3 py-2 sm:px-4 sm:py-3 text-white focus:outline-none focus:border-cyan-accent/50 transition-all font-mono text-xs sm:text-sm placeholder:text-gray-600"
                                             placeholder='"Write your message here..."'
                                         ></textarea>
                                     </div>
@@ -178,7 +177,7 @@ const Contact = () => {
                                 <button
                                     type="submit"
                                     disabled={isSending}
-                                    className={`w-full mt-6 bg-transparent border font-mono py-4 rounded-xl transition-all duration-300 flex items-center justify-center gap-2 group/btn ${isSending
+                                    className={`w-full mt-4 sm:mt-6 bg-transparent border font-mono py-3 sm:py-4 rounded-xl transition-all duration-300 flex items-center justify-center gap-2 group/btn ${isSending
                                         ? 'border-gray-500 text-gray-500 cursor-not-allowed'
                                         : 'border-cyan-accent/50 text-cyan-accent hover:bg-cyan-accent hover:text-primary-dark'
                                         }`}

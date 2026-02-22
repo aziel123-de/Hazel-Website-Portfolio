@@ -61,29 +61,33 @@ const Hero = () => {
                         </div>
                     </div>
 
-                    <div className="flex items-center gap-2 font-mono text-sm sm:text-base mb-4 group/name">
-                        <span className="text-purple-400">const</span>
-                        <span className="text-cyan-accent font-bold uppercase tracking-widest">Name</span>
-                        <span className="text-white">=</span>
-                        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight whitespace-nowrap">
-                            <span className="bg-gradient-to-r from-white via-white to-cyan-accent/40 bg-clip-text text-transparent">
-                                "Hazel Ann Sadangsal"
-                            </span>
-                        </h1>
-                        <span className="text-white">;</span>
+                    <div className="flex flex-col md:flex-row md:items-center gap-2 font-mono text-sm sm:text-base mb-6 group/name">
+                        <div className="flex items-center justify-center md:justify-start gap-2">
+                            <span className="text-purple-400">const</span>
+                            <span className="text-cyan-accent font-bold uppercase tracking-widest text-xs sm:text-sm">Name</span>
+                            <span className="text-white">=</span>
+                        </div>
+                        <div className="flex items-center justify-center md:justify-start gap-1">
+                            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight break-words text-center md:text-left">
+                                <span className="bg-gradient-to-r from-white via-white to-cyan-accent/40 bg-clip-text text-transparent">
+                                    "Hazel Ann Sadangsal"
+                                </span>
+                            </h1>
+                            <span className="text-white">;</span>
+                        </div>
                     </div>
 
-                    <h2 className="text-3xl md:text-5xl font-bold mb-8 flex flex-wrap items-center gap-x-3">
+                    <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-8 flex flex-wrap items-center justify-center md:justify-start gap-x-3">
                         <span className="text-gray-400">Aspiring</span>
-                        <span className="text-cyan-accent min-w-[200px]">
+                        <span className="text-cyan-accent min-w-[150px] sm:min-w-[200px] text-center md:text-left">
                             {displayText}
                             <span className="w-[3px] h-[1em] bg-cyan-accent inline-block ml-1 animate-pulse align-middle"></span>
                         </span>
                     </h2>
 
-                    <div className="relative mb-10 max-w-xl group/info">
-                        <div className="absolute -left-4 top-0 bottom-0 w-1 bg-gradient-to-b from-cyan-accent/50 to-purple-500/50 rounded-full opacity-50 group-hover/info:opacity-100 transition-opacity"></div>
-                        <p className="text-gray-400 text-lg leading-relaxed pl-6 font-mono text-sm sm:text-base">
+                    <div className="relative mb-10 max-w-xl mx-auto md:mx-0 group/info">
+                        <div className="absolute -left-4 top-0 bottom-0 w-1 bg-gradient-to-b from-cyan-accent/50 to-purple-500/50 rounded-full opacity-50 group-hover/info:opacity-100 transition-opacity hidden md:block"></div>
+                        <p className="text-gray-400 text-lg leading-relaxed md:pl-6 font-mono text-sm sm:text-base text-center md:text-left">
                             <span className="text-cyan-accent/60 block mb-2">/**</span>
                             <span>“Code with purpose. Design with clarity.”</span>
                             <span className="block mt-2">Transforming ideas into powerful, responsive web experiences.</span>
@@ -94,13 +98,13 @@ const Hero = () => {
                     <div className="flex flex-wrap gap-5 justify-center md:justify-start">
                         <a
                             href="#projects"
-                            className="bg-transparent border border-cyan-accent text-cyan-accent px-8 py-3 font-mono text-sm hover:bg-cyan-accent/10 transition-all group cursor-tech-hover"
+                            className="w-full sm:w-auto text-center bg-transparent border border-cyan-accent text-cyan-accent px-8 py-3 font-mono text-sm hover:bg-cyan-accent/10 transition-all group cursor-tech-hover"
                         >
                             View My Work <span className="inline-block transition-transform group-hover:translate-x-1">→</span>
                         </a>
                         <a
                             href="#contact"
-                            className="bg-transparent border border-gray-700 text-gray-300 px-8 py-3 font-mono text-sm hover:border-gray-500 transition-colors cursor-tech-hover"
+                            className="w-full sm:w-auto text-center bg-transparent border border-gray-700 text-gray-300 px-8 py-3 font-mono text-sm hover:border-gray-500 transition-colors cursor-tech-hover"
                         >
                             Get in Touch
                         </a>
@@ -109,7 +113,7 @@ const Hero = () => {
 
                 <div className="flex-1 flex justify-center items-center relative group">
                     {/* Main Image Container with 3D Perspective */}
-                    <div className="relative w-72 h-80 md:w-80 md:h-96 [perspective:1000px]">
+                    <div className="relative w-64 h-72 sm:w-72 sm:h-80 md:w-80 md:h-96 [perspective:1000px]">
                         <div className="relative w-full h-full transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(-10deg)_rotateX(5deg)]">
 
                             {/* Technical Grid Overlay */}

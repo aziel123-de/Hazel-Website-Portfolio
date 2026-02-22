@@ -66,13 +66,13 @@ const Projects = () => {
                         <div className="absolute top-0 right-4 p-2 text-[10px] text-gray-600 font-mono uppercase tracking-tighter opacity-0 group-hover/code:opacity-100 transition-opacity z-10">
                             projects_manifest.json
                         </div>
-                        <div className="bg-white/[0.02] border border-white/5 p-6 rounded-lg font-mono relative overflow-hidden backdrop-blur-sm">
-                            <span className="text-cyan-accent/40 text-sm block mb-2">/**</span>
-                            <p className="text-gray-400 text-sm sm:text-base leading-relaxed italic pl-4 border-l border-cyan-accent/10">
+                        <div className="bg-white/[0.02] border border-white/5 p-4 sm:p-6 rounded-lg font-mono relative overflow-hidden backdrop-blur-sm">
+                            <span className="text-cyan-accent/40 text-xs sm:text-sm block mb-2">/**</span>
+                            <p className="text-gray-400 text-xs sm:text-base leading-relaxed italic pl-3 sm:pl-4 border-l border-cyan-accent/10">
                                 A collection of projects that highlight my skills in UI/UX design and front-end development,
                                 focusing on usability, clarity, and real-world solutions.
                             </p>
-                            <span className="text-cyan-accent/40 text-sm block mt-2"> */</span>
+                            <span className="text-cyan-accent/40 text-xs sm:text-sm block mt-2"> */</span>
 
                             {/* Decorative terminal dots */}
                             <div className="absolute top-3 left-3 flex gap-1.5 opacity-30">
