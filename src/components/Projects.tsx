@@ -1,5 +1,6 @@
 import { Github, ExternalLink } from 'lucide-react';
 import ScrollReveal from './ScrollReveal';
+import inspireImage from '../assets/Inspire.png';
 
 const Projects = () => {
     const projects = [
@@ -7,6 +8,7 @@ const Projects = () => {
             title: 'PC Planner',
             description: 'Web app for building custom PCs with clean interface, component database, compatibility checks, and budget tools.',
             image: '/pcplanner landing page.png',
+            imagePosition: 'left',
             tech: ['React', 'Node.js', 'Firebase Authentication', 'MySQL'],
             liveUrl: '#',
             githubUrl: 'https://github.com/aziel123-de'
@@ -45,9 +47,50 @@ const Projects = () => {
         },
         {
             title: 'IHI Website',
-            description: 'Coming soon.',
-            image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?fit=crop&w=800&q=80',
+            description: "The Inspire Holdings Inc. website serves as the company's official online platform, designed to introduce the organization, showcase its business portfolio, and provide information about its services, subsidiaries, and investment opportunities.",
+            image: inspireImage,
+            imagePosition: 'left',
             tech: ['Next.js', 'Firebase', 'Typescript'],
+            liveUrl: 'https://www.inspireholdings.ph/',
+            githubUrl: 'https://github.com/aziel123-de'
+        },
+        {
+            title: 'Inspire Admin',
+            description: 'Add your project description here.',
+            image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?fit=crop&w=800&q=80',
+            tech: ['Add tech stack'],
+            liveUrl: '#',
+            githubUrl: 'https://github.com/aziel123-de'
+        },
+        {
+            title: "I'M Pay",
+            description: 'Add your project description here.',
+            image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?fit=crop&w=800&q=80',
+            tech: ['Add tech stack'],
+            liveUrl: '#',
+            githubUrl: 'https://github.com/aziel123-de'
+        },
+        {
+            title: "I'M Pay Landing Page",
+            description: 'Add your project description here.',
+            image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?fit=crop&w=800&q=80',
+            tech: ['Add tech stack'],
+            liveUrl: '#',
+            githubUrl: 'https://github.com/aziel123-de'
+        },
+        {
+            title: "I'M Pay Admin",
+            description: 'Add your project description here.',
+            image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?fit=crop&w=800&q=80',
+            tech: ['Add tech stack'],
+            liveUrl: '#',
+            githubUrl: 'https://github.com/aziel123-de'
+        },
+        {
+            title: 'Culinara',
+            description: 'Add your project description here.',
+            image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?fit=crop&w=800&q=80',
+            tech: ['Add tech stack'],
             liveUrl: '#',
             githubUrl: 'https://github.com/aziel123-de'
         }
@@ -92,7 +135,7 @@ const Projects = () => {
                                     <img
                                         src={project.image}
                                         alt={project.title}
-                                        className="w-full h-full object-cover group-hover:scale-110 transition-all duration-500"
+                                        className={`w-full h-full object-cover group-hover:scale-110 transition-all duration-500${'imagePosition' in project && project.imagePosition === 'left' ? ' object-left' : ''}`}
                                     />
                                     <div className="absolute inset-0 bg-primary-dark/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-6">
                                         <a href={project.liveUrl} className="p-3 bg-cyan-accent text-primary-dark rounded-full hover:bg-white transition-colors">
